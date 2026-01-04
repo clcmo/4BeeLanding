@@ -1,54 +1,92 @@
 /* ==================== ACCESSIBILITY CONTROLS ==================== */
 .accessibility-controls {
-    position: fixed;
-    top: 100px;
-    right: 20px;
-    z-index: 2000;
-    background: var(--white);
-    padding: var(--spacing-md);
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-lg);
-    border: 2px solid var(--primary-blue);
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
-.accessibility-controls h3 {
-    font-size: 0.9rem;
-    margin-bottom: var(--spacing-sm);
-    color: var(--primary-blue);
-    font-weight: 700;
-}
-
-.accessibility-controls button {
-    display: block;
-    width: 100%;
-    padding: var(--spacing-xs) var(--spacing-sm);
-    margin-bottom: var(--spacing-xs);
+.accessibility-toggle {
     background: var(--primary-blue);
     color: var(--white);
     border: none;
-    border-radius: var(--radius-sm);
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    font-family: var(--font-body);
-    font-weight: 600;
-    font-size: 0.85rem;
-    transition: all var(--transition-fast);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 102, 204, 0.3);
 }
 
-.accessibility-controls button:hover {
+.accessibility-toggle:hover {
     background: var(--primary-blue-dark);
-    transform: translateY(-2px);
+    transform: scale(1.1);
 }
 
-.accessibility-controls button:active {
+.accessibility-toggle .material-symbols-outlined {
+    font-size: 24px;
+}
+
+/* Painel de Acessibilidade */
+.accessibility-panel {
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-md);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    min-width: 240px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.accessibility-panel.active {
+    opacity: 1;
+    visibility: visible;
     transform: translateY(0);
 }
 
-.accessibility-controls button.active {
-    background: var(--primary-blue-dark);
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+.accessibility-panel h3 {
+    margin: 0 0 var(--spacing-sm);
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    font-family: var(--font-display);
 }
 
-.toggle-icon {
-    font-family: 'Material Symbols Outlined';
-    margin-right: 4px;
+.accessibility-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm);
+    border: 2px solid var(--gray-light);
+    background: var(--white);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: var(--spacing-xs);
+    font-size: 0.95rem;
+}
+
+.accessibility-btn:hover {
+    background: var(--primary-blue-light);
+    border-color: var(--primary-blue);
+    color: var(--white);
+    transform: translateX(4px);
+}
+
+.accessibility-btn.active {
+    background: var(--primary-blue);
+    border-color: var(--primary-blue-dark);
+    color: var(--white);
+}
+
+.accessibility-btn .material-symbols-outlined {
+    font-size: 20px;
 }
