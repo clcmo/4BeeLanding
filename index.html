@@ -126,28 +126,6 @@
 </head>
 
 <body>
-    <!-- Accessibility Controls -->
-    <div class="accessibility-controls">
-        <h3>Acessibilidade</h3>
-        <button onclick="toggleDarkMode()">
-            <span class="toggle-icon">dark_mode</span>Modo Noturno
-        </button>
-        <button onclick="toggleHighContrast()">
-            <span class="toggle-icon">contrast</span>Alto Contraste
-        </button>
-        <button onclick="setColorBlindMode('deuteranopia')">
-            <span class="toggle-icon">visibility</span>Deuteranopia
-        </button>
-        <button onclick="setColorBlindMode('protanopia')">
-            <span class="toggle-icon">visibility</span>Protanopia
-        </button>
-        <button onclick="setColorBlindMode('tritanopia')">
-            <span class="toggle-icon">visibility</span>Tritanopia
-        </button>
-        <button onclick="resetAccessibility()">
-            <span class="toggle-icon">refresh</span>Padrão
-        </button>
-    </div>
 
     <header>
         <nav>
@@ -160,6 +138,29 @@
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
+
+        <!-- Accessibility Controls -->
+        <div class="accessibility-controls">
+            <h3>Acessibilidade</h3>
+            <button onclick="toggleDarkMode()">
+                <span class="toggle-icon">dark_mode</span>Modo Noturno
+            </button>
+            <button onclick="toggleHighContrast()">
+                <span class="toggle-icon">contrast</span>Alto Contraste
+            </button>
+            <button onclick="setColorBlindMode('deuteranopia')">
+                <span class="toggle-icon">visibility</span>Deuteranopia
+            </button>
+            <button onclick="setColorBlindMode('protanopia')">
+                <span class="toggle-icon">visibility</span>Protanopia
+            </button>
+            <button onclick="setColorBlindMode('tritanopia')">
+                <span class="toggle-icon">visibility</span>Tritanopia
+            </button>
+            <button onclick="resetAccessibility()">
+                <span class="toggle-icon">refresh</span>Padrão
+            </button>
+        </div>
     </header>
 
     <section class="hero">
