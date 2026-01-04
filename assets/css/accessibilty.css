@@ -1,92 +1,107 @@
 /* ==================== ACCESSIBILITY CONTROLS ==================== */
-.accessibility-controls {
+.accessibility-menu {
     position: relative;
-    display: flex;
-    align-items: center;
+    display: inline-block;
 }
 
 .accessibility-toggle {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-sm) var(--spacing-md);
     background: var(--primary-blue);
     color: var(--white);
     border: none;
-    border-radius: 50%;
-    width: 48px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: var(--radius-full);
     cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0, 102, 204, 0.3);
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: all var(--transition-normal);
+    box-shadow: var(--shadow-sm);
 }
 
 .accessibility-toggle:hover {
     background: var(--primary-blue-dark);
-    transform: scale(1.1);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
 }
 
-.accessibility-toggle .material-symbols-outlined {
-    font-size: 24px;
+.accessibility-toggle .toggle-icon {
+    font-family: 'Material Symbols Outlined';
+    font-size: 1.2rem;
 }
 
-/* Painel de Acessibilidade */
-.accessibility-panel {
+.accessibility-dropdown {
     position: absolute;
-    top: calc(100% + 12px);
+    top: calc(100% + 10px);
     right: 0;
     background: var(--white);
-    border-radius: var(--radius-lg);
+    border: 2px solid var(--primary-blue);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-xl);
     padding: var(--spacing-md);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-    min-width: 240px;
+    min-width: 220px;
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
-    transition: all 0.3s ease;
-    z-index: 1000;
+    transition: all var(--transition-normal);
+    z-index: 1001;
 }
 
-.accessibility-panel.active {
+.accessibility-dropdown.active {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
 }
 
-.accessibility-panel h3 {
-    margin: 0 0 var(--spacing-sm);
-    font-size: 1.1rem;
-    color: var(--text-dark);
-    font-family: var(--font-display);
+.accessibility-dropdown h3 {
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--primary-blue);
+    font-weight: 700;
+    padding-bottom: var(--spacing-xs);
+    border-bottom: 2px solid var(--primary-blue);
 }
 
-.accessibility-btn {
-    width: 100%;
+.accessibility-dropdown button {
     display: flex;
     align-items: center;
-    gap: var(--spacing-sm);
+    gap: var(--spacing-xs);
+    width: 100%;
     padding: var(--spacing-sm);
-    border: 2px solid var(--gray-light);
-    background: var(--white);
-    border-radius: var(--radius-md);
-    cursor: pointer;
-    transition: all 0.3s ease;
     margin-bottom: var(--spacing-xs);
-    font-size: 0.95rem;
+    background: var(--off-white);
+    color: var(--primary-blue);
+    border: 2px solid transparent;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: all var(--transition-fast);
+    text-align: left;
 }
 
-.accessibility-btn:hover {
-    background: var(--primary-blue-light);
-    border-color: var(--primary-blue);
+.accessibility-dropdown button:hover {
+    background: var(--primary-blue);
     color: var(--white);
+    border-color: var(--primary-blue);
     transform: translateX(4px);
 }
 
-.accessibility-btn.active {
-    background: var(--primary-blue);
-    border-color: var(--primary-blue-dark);
-    color: var(--white);
+.accessibility-dropdown button:last-child {
+    margin-bottom: 0;
 }
 
-.accessibility-btn .material-symbols-outlined {
-    font-size: 20px;
+.accessibility-dropdown button.active {
+    background: var(--primary-blue);
+    color: var(--white);
+    border-color: var(--primary-blue-dark);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.accessibility-dropdown .toggle-icon {
+    font-family: 'Material Symbols Outlined';
+    font-size: 1.1rem;
 }

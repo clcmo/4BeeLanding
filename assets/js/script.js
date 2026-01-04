@@ -3,6 +3,22 @@ let darkModeEnabled = false;
 let highContrastEnabled = false;
 let colorBlindMode = null;
 
+function toggleAccessibilityMenu() {
+  const dropdown = document.getElementById('accessibilityDropdown');
+  dropdown.classList.toggle('active');
+}
+
+// Close dropdown when clicking outside
+document.addEventListener('click', function (event) {
+  const dropdown = document.getElementById('accessibilityDropdown');
+  const toggle = document.querySelector('.accessibility-toggle');
+  const menu = document.querySelector('.accessibility-menu');
+
+  if (!menu.contains(event.target)) {
+    dropdown.classList.remove('active');
+  }
+});
+
 function toggleDarkMode() {
   darkModeEnabled = !darkModeEnabled;
   updateAccessibilityClasses();
@@ -39,7 +55,7 @@ function updateAccessibilityClasses() {
 }
 
 function updateButtonStates() {
-  const buttons = document.querySelectorAll('.accessibility-controls button');
+  const buttons = document.querySelectorAll('.accessibility-dropdown button');
   buttons.forEach(btn => btn.classList.remove('active'));
 
   if (darkModeEnabled) {

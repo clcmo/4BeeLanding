@@ -1,60 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <!-- Primary Meta Tags -->
     <title>4Bee - Cosméticos Vegetarianos para o Mundo Fitness</title>
     <meta name="title" content="4Bee - Cosméticos Vegetarianos para o Mundo Fitness">
-    <meta name="description"
-        content="Cosméticos 100% vegetarianos desenvolvidos para quem vive um estilo de vida ativo. Conheça 4Serum, 4Fit e 4Blush - produtos naturais de alta performance.">
-    <meta name="keywords"
-        content="cosméticos veganos, produtos fitness, beleza natural, cosméticos vegetarianos, 4Bee, 4Serum, 4Fit, 4Blush, cruelty-free, sustentável">
+    <meta name="description" content="Cosméticos 100% vegetarianos desenvolvidos para quem vive um estilo de vida ativo. Conheça 4Serum, 4Fit e 4Blush - produtos naturais de alta performance.">
+    <meta name="keywords" content="cosméticos veganos, produtos fitness, beleza natural, cosméticos vegetarianos, 4Bee, 4Serum, 4Fit, 4Blush, cruelty-free, sustentável">
     <meta name="robots" content="index, follow">
     <meta name="language" content="Portuguese">
     <meta name="author" content="4Bee Cosméticos">
-
+    
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://4bee.com.br/">
     <meta property="og:title" content="4Bee - Cosméticos Vegetarianos para o Mundo Fitness">
-    <meta property="og:description"
-        content="Beleza natural para seu corpo fitness. Produtos 100% veganos, cruelty-free e de alta performance. Descubra a linha 4Bee!">
+    <meta property="og:description" content="Beleza natural para seu corpo fitness. Produtos 100% veganos, cruelty-free e de alta performance. Descubra a linha 4Bee!">
     <meta property="og:image" content="https://4bee.com.br/images/og-image.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:locale" content="pt_BR">
     <meta property="og:site_name" content="4Bee Cosméticos">
-
+    
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://4bee.com.br/">
     <meta property="twitter:title" content="4Bee - Cosméticos Vegetarianos para o Mundo Fitness">
-    <meta property="twitter:description"
-        content="Beleza natural para seu corpo fitness. Produtos 100% veganos, cruelty-free e de alta performance. Descubra a linha 4Bee!">
+    <meta property="twitter:description" content="Beleza natural para seu corpo fitness. Produtos 100% veganos, cruelty-free e de alta performance. Descubra a linha 4Bee!">
     <meta property="twitter:image" content="https://4bee.com.br/images/twitter-image.jpg">
     <meta name="twitter:creator" content="@4BeeOficial">
-
+    
     <!-- WhatsApp -->
     <meta property="og:image:alt" content="4Bee - Cosméticos Vegetarianos: 4Serum, 4Fit e 4Blush">
-
+    
     <!-- Additional SEO Meta Tags -->
     <meta name="theme-color" content="#0066CC">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="4Bee">
     <meta name="format-detection" content="telephone=no">
-
+    
     <!-- Canonical URL -->
     <link rel="canonical" href="https://4bee.com.br/">
-
+    
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href=".assets/favicon/favicon-32.png">
     <link rel="icon" type="image/png" sizes="16x16" href=".assets/favicon/favicon-16.png">
     <link rel="apple-touch-icon" sizes="180x180" href=".assets/favicon/favicon-180.png">
-
+    
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
@@ -80,7 +75,7 @@
       }
     }
     </script>
-
+    
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -100,7 +95,7 @@
       "category": "Cosméticos Veganos"
     }
     </script>
-
+    
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -114,19 +109,13 @@
       }
     }
     </script>
-
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lemon&family=Noto+Sans:wght@400;500;600;700;900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400" rel="stylesheet">
-
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
 </head>
-
 <body>
-
     <header>
         <nav>
             <div class="logo-container">
@@ -136,39 +125,42 @@
                 <li><a href="#produtos">Produtos</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#contato">Contato</a></li>
+                <li class="accessibility-menu">
+                    <button class="accessibility-toggle" onclick="toggleAccessibilityMenu()">
+                        <span class="toggle-icon">accessibility</span>
+                        <span>Acessibilidade</span>
+                    </button>
+                    <div class="accessibility-dropdown" id="accessibilityDropdown">
+                        <h3>Opções de Acessibilidade</h3>
+                        <button onclick="toggleDarkMode()">
+                            <span class="toggle-icon">dark_mode</span>Modo Noturno
+                        </button>
+                        <button onclick="toggleHighContrast()">
+                            <span class="toggle-icon">contrast</span>Alto Contraste
+                        </button>
+                        <button onclick="setColorBlindMode('deuteranopia')">
+                            <span class="toggle-icon">visibility</span>Deuteranopia
+                        </button>
+                        <button onclick="setColorBlindMode('protanopia')">
+                            <span class="toggle-icon">visibility</span>Protanopia
+                        </button>
+                        <button onclick="setColorBlindMode('tritanopia')">
+                            <span class="toggle-icon">visibility</span>Tritanopia
+                        </button>
+                        <button onclick="resetAccessibility()">
+                            <span class="toggle-icon">refresh</span>Padrão
+                        </button>
+                    </div>
+                </li>
             </ul>
         </nav>
-
-        <!-- Accessibility Controls -->
-        <div class="accessibility-controls">
-            <h3>Acessibilidade</h3>
-            <button onclick="toggleDarkMode()">
-                <span class="toggle-icon">dark_mode</span>Modo Noturno
-            </button>
-            <button onclick="toggleHighContrast()">
-                <span class="toggle-icon">contrast</span>Alto Contraste
-            </button>
-            <button onclick="setColorBlindMode('deuteranopia')">
-                <span class="toggle-icon">visibility</span>Deuteranopia
-            </button>
-            <button onclick="setColorBlindMode('protanopia')">
-                <span class="toggle-icon">visibility</span>Protanopia
-            </button>
-            <button onclick="setColorBlindMode('tritanopia')">
-                <span class="toggle-icon">visibility</span>Tritanopia
-            </button>
-            <button onclick="resetAccessibility()">
-                <span class="toggle-icon">refresh</span>Padrão
-            </button>
-        </div>
     </header>
 
     <section class="hero">
         <div class="hero-content">
             <div class="hero-text">
                 <h1>Beleza Natural Para Seu Corpo Fitness</h1>
-                <p>Cosméticos 100% vegetarianos desenvolvidos especialmente para quem vive um estilo de vida ativo e
-                    saudável. Potencialize sua beleza com a força da natureza.</p>
+                <p>Cosméticos 100% vegetarianos desenvolvidos especialmente para quem vive um estilo de vida ativo e saudável. Potencialize sua beleza com a força da natureza.</p>
                 <a href="#produtos" class="cta-button">Conheça Nossos Produtos</a>
             </div>
             <div class="hero-visual">
@@ -196,8 +188,7 @@
             <div class="product-card">
                 <div class="product-icon">water_drop</div>
                 <h3>4Serum</h3>
-                <p>Sérum facial ultra-hidratante com ativos vegetais que promovem renovação celular e proteção
-                    antioxidante. Ideal para pele que enfrenta desafios diários de treinos intensos.</p>
+                <p>Sérum facial ultra-hidratante com ativos vegetais que promovem renovação celular e proteção antioxidante. Ideal para pele que enfrenta desafios diários de treinos intensos.</p>
                 <ul class="product-features">
                     <li>100% vegano e cruelty-free</li>
                     <li>Hidratação profunda 24h</li>
@@ -209,8 +200,7 @@
             <div class="product-card">
                 <div class="product-icon">fitness_center</div>
                 <h3>4Fit</h3>
-                <p>Loção corporal revitalizante com extratos botânicos que ajudam na recuperação muscular e proporcionam
-                    sensação refrescante pós-treino.</p>
+                <p>Loção corporal revitalizante com extratos botânicos que ajudam na recuperação muscular e proporcionam sensação refrescante pós-treino.</p>
                 <ul class="product-features">
                     <li>Ação refrescante e calmante</li>
                     <li>Auxilia na recuperação muscular</li>
@@ -222,8 +212,7 @@
             <div class="product-card">
                 <div class="product-icon">auto_awesome</div>
                 <h3>4Blush</h3>
-                <p>Blush em pó mineral com pigmentos naturais que proporcionam um glow saudável e duradouro. Perfeito
-                    para manter a vitalidade no rosto mesmo após os treinos.</p>
+                <p>Blush em pó mineral com pigmentos naturais que proporcionam um glow saudável e duradouro. Perfeito para manter a vitalidade no rosto mesmo após os treinos.</p>
                 <ul class="product-features">
                     <li>Pigmentos minerais puros</li>
                     <li>Longa duração</li>
@@ -238,11 +227,8 @@
         <div class="about-content">
             <div class="about-text">
                 <h2>Sobre a 4Bee</h2>
-                <p>Nascemos da união entre o amor pela natureza e a paixão por um estilo de vida ativo. A 4Bee
-                    desenvolve cosméticos vegetarianos de alta performance pensados para pessoas que se importam tanto
-                    com sua saúde quanto com o planeta.</p>
-                <p>Cada produto é formulado com ingredientes naturais cuidadosamente selecionados, livres de crueldade
-                    animal e testados para resistir aos desafios do dia a dia fitness.</p>
+                <p>Nascemos da união entre o amor pela natureza e a paixão por um estilo de vida ativo. A 4Bee desenvolve cosméticos vegetarianos de alta performance pensados para pessoas que se importam tanto com sua saúde quanto com o planeta.</p>
+                <p>Cada produto é formulado com ingredientes naturais cuidadosamente selecionados, livres de crueldade animal e testados para resistir aos desafios do dia a dia fitness.</p>
             </div>
             <div class="values">
                 <div class="value-card">
@@ -277,5 +263,4 @@
 
     <script src="./assets/js/script.js"></script>
 </body>
-
 </html>

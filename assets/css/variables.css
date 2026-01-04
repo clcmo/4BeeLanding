@@ -13,7 +13,7 @@
     --gray-dark: #4A4A4A;
 
     /* Typography */
-    --font-display: 'Lemon Tuesday', cursive;
+    --font-display: 'Lemon Tuesday', 'Lemon', cursive;
     --font-body: 'Noto Sans', sans-serif;
 
     /* Spacing */
