@@ -37,12 +37,27 @@ nav {
             rgba(255, 255, 255, 0.1) 11px);
 }
 
+/* Logo 4Bee com letras mais próximas */
 .logo {
     font-family: var(--font-display);
-    font-size: 2rem;
-    color: var(--white);
-    font-weight: 400;
-    letter-spacing: 2px;
+    font-size: 2.5rem;
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: -0.15em; /* Aproxima as letras */
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    color: var(--primary-blue-dark);
+    transform: scale(1.05);
+    letter-spacing: -0.12em; /* Leve afastamento no hover */
+}
+
+/* Aproxima o "4" do "B" */
+.logo::first-letter {
+    margin-right: -0.1em;
 }
 
 .nav-links {
