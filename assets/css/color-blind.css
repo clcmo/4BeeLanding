@@ -1,0 +1,50 @@
+/* ==================== COLORBLIND MODES ==================== */
+/* Deuteranopia (red-green colorblind) */
+.deuteranopia {
+    --primary-blue: #0066CC;
+    --primary-blue-light: #4D94FF;
+    --primary-blue-dark: #003D7A;
+    --accent-blue: #00A3E0;
+}
+
+/* Protanopia (red-green colorblind) */
+.protanopia {
+    --primary-blue: #0066CC;
+    --primary-blue-light: #5C9EFF;
+    --primary-blue-dark: #00437A;
+    --accent-blue: #00A3E0;
+}
+
+/* Tritanopia (blue-yellow colorblind) */
+.tritanopia {
+    --primary-blue: #00668C;
+    --primary-blue-light: #3399CC;
+    --primary-blue-dark: #004466;
+    --accent-blue: #0099B8;
+}
+
+/* Dark Mode + Colorblind Modes Combined */
+.dark-mode.deuteranopia,
+.dark-mode.protanopia {
+    --primary-blue: #4D94FF;
+    --accent-blue: #00BFFF;
+}
+
+.dark-mode.tritanopia {
+    --primary-blue: #3399CC;
+    --accent-blue: #00CED1;
+}
+
+/* Dark Mode + High Contrast */
+.dark-mode.high-contrast {
+    --primary-blue: #66B3FF;
+    --primary-blue-light: #99CCFF;
+    --primary-blue-dark: #3399FF;
+    --accent-blue: #00FFFF;
+    --white: #000000;
+    --off-white: #0A0A0A;
+    --black: #FFFFFF;
+    --gray-light: #1A1A1A;
+    --gray-medium: #CCCCCC;
+    --gray-dark: #F0F0F0;
+}

@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Noto+Sans:wght@400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400');
+
+/* ==================== CUSTOM FONT ==================== */
+@font-face {
+    font-family: 'Lemon Tuesday';
+    src: url('./fonts/lemon-tuesday.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

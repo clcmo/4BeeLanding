@@ -1,0 +1,45 @@
+/* ==================== CSS VARIABLES ==================== */
+:root {
+    /* Color Palette - Default */
+    --primary-blue: #0066CC;
+    --primary-blue-light: #3399FF;
+    --primary-blue-dark: #004C99;
+    --accent-blue: #00A3E0;
+    --white: #FFFFFF;
+    --off-white: #F8FAFB;
+    --black: #0A0A0A;
+    --gray-light: #E5E5E5;
+    --gray-medium: #A0A0A0;
+    --gray-dark: #4A4A4A;
+
+    /* Typography */
+    --font-display: 'Lemon', cursive;
+    --font-body: 'Noto Sans', sans-serif;
+
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-2xl: 4rem;
+    --spacing-3xl: 6rem;
+
+    /* Border Radius */
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-xl: 32px;
+    --radius-full: 9999px;
+
+    /* Shadows */
+    --shadow-sm: 0 2px 8px rgba(0, 102, 204, 0.1);
+    --shadow-md: 0 4px 16px rgba(0, 102, 204, 0.15);
+    --shadow-lg: 0 8px 32px rgba(0, 102, 204, 0.2);
+    --shadow-xl: 0 16px 48px rgba(0, 102, 204, 0.25);
+
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+}

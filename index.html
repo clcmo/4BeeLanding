@@ -1,287 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>4Bee E-Commerce Home Model</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>4Bee - Cosméticos Vegetarianos para o Mundo Fitness</title>
+    <meta name="title" content="4Bee - Cosméticos Vegetarianos para o Mundo Fitness">
+    <meta name="description"
+        content="Cosméticos 100% vegetarianos desenvolvidos para quem vive um estilo de vida ativo. Conheça 4Serum, 4Fit e 4Blush - produtos naturais de alta performance.">
+    <meta name="keywords"
+        content="cosméticos veganos, produtos fitness, beleza natural, cosméticos vegetarianos, 4Bee, 4Serum, 4Fit, 4Blush, cruelty-free, sustentável">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Portuguese">
+    <meta name="author" content="4Bee Cosméticos">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://4bee.com.br/">
+    <meta property="og:title" content="4Bee - Cosméticos Vegetarianos para o Mundo Fitness">
+    <meta property="og:description"
+        content="Beleza natural para seu corpo fitness. Produtos 100% veganos, cruelty-free e de alta performance. Descubra a linha 4Bee!">
+    <meta property="og:image" content="https://4bee.com.br/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="4Bee Cosméticos">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://4bee.com.br/">
+    <meta property="twitter:title" content="4Bee - Cosméticos Vegetarianos para o Mundo Fitness">
+    <meta property="twitter:description"
+        content="Beleza natural para seu corpo fitness. Produtos 100% veganos, cruelty-free e de alta performance. Descubra a linha 4Bee!">
+    <meta property="twitter:image" content="https://4bee.com.br/images/twitter-image.jpg">
+    <meta name="twitter:creator" content="@4BeeOficial">
+
+    <!-- WhatsApp -->
+    <meta property="og:image:alt" content="4Bee - Cosméticos Vegetarianos: 4Serum, 4Fit e 4Blush">
+
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#0066CC">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="4Bee">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://4bee.com.br/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href=".assets/favicon/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href=".assets/favicon/favicon-180.png">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "4Bee Cosméticos",
+      "description": "Cosméticos 100% vegetarianos desenvolvidos para o mundo fitness",
+      "url": "https://4bee.com.br",
+      "logo": "https://4bee.com.br/images/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "email": "contato@4bee.com.br"
+      },
+      "sameAs": [
+        "https://www.facebook.com/4BeeOficial",
+        "https://www.instagram.com/4beeoficial",
+        "https://twitter.com/4BeeOficial"
+      ],
+      "brand": {
+        "@type": "Brand",
+        "name": "4Bee"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "#4serum",
+      "name": "4Serum",
+      "description": "Sérum facial ultra-hidratante com ativos vegetais para renovação celular",
+      "brand": {
+        "@type": "Brand",
+        "name": "4Bee"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "availability": "https://schema.org/PreOrder",
+        "priceCurrency": "BRL"
+      },
+      "category": "Cosméticos Veganos"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "4Bee - Cosméticos Vegetarianos para o Mundo Fitness",
+      "description": "Landing page oficial da 4Bee, marca de cosméticos veganos para atletas e praticantes de fitness",
+      "url": "https://4bee.com.br",
+      "publisher": {
+        "@type": "Organization",
+        "name": "4Bee Cosméticos"
+      }
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&family=Noto+Sans:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body id="body">
-
-	<!-- Navigation bar -->
-	<header>
-		<div class="container">
-			<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-
-				<!-- The company name that is seen on the top of the page -->
-				<a class="navbar-brand" href="#">4Bee</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+<body>
+    <!-- Accessibility Controls -->
+    <div class="accessibility-controls">
+        <h3>Acessibilidade</h3>
+        <button onclick="toggleDarkMode()">
+            <span class="toggle-icon">dark_mode</span>Modo Noturno
         </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto text-center text-lg-left">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Início</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#sobre">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#servico">Serviço</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contato">Contato</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+        <button onclick="toggleHighContrast()">
+            <span class="toggle-icon">contrast</span>Alto Contraste
+        </button>
+        <button onclick="setColorBlindMode('deuteranopia')">
+            <span class="toggle-icon">visibility</span>Deuteranopia
+        </button>
+        <button onclick="setColorBlindMode('protanopia')">
+            <span class="toggle-icon">visibility</span>Protanopia
+        </button>
+        <button onclick="setColorBlindMode('tritanopia')">
+            <span class="toggle-icon">visibility</span>Tritanopia
+        </button>
+        <button onclick="resetAccessibility()">
+            <span class="toggle-icon">refresh</span>Padrão
+        </button>
     </div>
-  </header>
-  <!-- Navigation bar finished -->
 
-  <!-- Main body -->
-  <section class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 text-center mb-5 mb-md-0">
-          <img src="images/sample-parfum.png" alt="parfum" style="max-width: 40%;">
-        </div>
-        <div class="col-md-6 align-self-center text-center text-md-left">
-          <div class="block">
-            <h1 class="font-weight-bold mb-4 font-size-60">Lorem ipsum dolor sit amet</h1>
-            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu elit pulvinar, vehicula ligula in, elementum justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus quam justo, hendrerit sed efficitur et, ultricies non ex. Nunc quis dolor nec turpis accumsan viverra at sit amet sem. Morbi sit amet sollicitudin lacus. Suspendisse suscipit laoreet fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In rhoncus rutrum sodales.</p>
-            <a class="btn btn-main" href="#about" role="button">Buy Now For $799</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-      <!-- Features -->
-    <section id="sobre" class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="heading">
-                        <h2>Our Special Features</h2>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="mb-40 text-center text-md-left">
-                        <i class="d-inlin-block h2 mb-10 tf-ion-ios-alarm-outline"></i>
-                        <h4 class="font-weight-bold mb-2">Lorem Ipsum</h4>
-                        <p>Ut eget vulputate massa. Donec libero metus, faucibus eu accumsan vel, vulputate vel est.</p>
-                    </div>
-                    <div class="mb-40 text-center text-md-left">
-                        <i class="d-inlin-block h2 mb-10 tf-ion-ios-bell-outline"></i>
-                        <h4 class="font-weight-bold mb-2">Lorem Ipsum</h4>
-                        <p>Ut eget vulputate massa. Donec libero metus, faucibus eu accumsan vel, vulputate vel est.</p>
-                    </div>
-                    <div class="mb-40 text-center text-md-left">
-                        <i class="d-inlin-block h2 mb-10 tf-ion-ios-cart-outline"></i>
-                        <h4 class="font-weight-bold mb-2">Lorem Ipsum</h4>
-                        <p>Ut eget vulputate massa. Donec libero metus, faucibus eu accumsan vel, vulputate vel est.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 text-center align-self-center mb-4 mb-md-0">
-                    <img class="img-fluid" src="images/sample-heart.png" alt="parfum 2">
-                </div>
-                <div class="col-md-4">
-                    <div class="mb-40 text-center text-md-left">
-                        <i class="d-inlin-block h2 mb-10 tf-ion-ios-alarm-outline"></i>
-                        <h4 class="font-weight-bold mb-2">Lorem Ipsum</h4>
-                        <p>Ut eget vulputate massa. Donec libero metus, faucibus eu accumsan vel, vulputate vel est.</p>
-                    </div>
-                    <div class="mb-40 text-center text-md-left">
-                        <i class="d-inlin-block h2 mb-10 tf-ion-ios-bell-outline"></i>
-                        <h4 class="font-weight-bold mb-2">Lorem Ipsum</h4>
-                        <p>Ut eget vulputate massa. Donec libero metus, faucibus eu accumsan vel, vulputate vel est.</p>
-                    </div>
-                    <div class="mb-40 text-center text-md-left">
-                        <i class="d-inlin-block h2 mb-10 tf-ion-ios-cart-outline"></i>
-                        <h4 class="font-weight-bold mb-2">Lorem Ipsum</h4>
-                        <p>Ut eget vulputate massa. Donec libero metus, faucibus eu accumsan vel, vulputate vel est.</p>
-                    </div>
-                </div>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <div class="logo">4Bee</div>
             </div>
-        </div>
-    </section>
-  
-      <section class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center mb-5 mb-lg-0">
-                    <img class="img-fluid" src="images/sample-blue.png" alt="">
-                </div>
-                <div class="col-md-6 align-self-center text-center text-md-left">
-                    <div class="content">
-                        <h2 class="subheading font-weight-bold mb-10">Lorem ipsum dolor sit amet.</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum doloribus reiciendis repellat fugiat ipsum rem veritatis unde ad, omnis similique esse nulla soluta alias nemo nihil possimus, porro autem ea.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam exercitationem fugit incidunt expedita tempore cumque, ducimus voluptates quo excepturi ipsum tenetur cum aliquam, sapiente atque maxime dicta architecto quae quidem.</p>
-                    </div>
-                </div>
+            <ul class="nav-links">
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Beleza Natural Para Seu Corpo Fitness</h1>
+                <p>Cosméticos 100% vegetarianos desenvolvidos especialmente para quem vive um estilo de vida ativo e
+                    saudável. Potencialize sua beleza com a força da natureza.</p>
+                <a href="#produtos" class="cta-button">Conheça Nossos Produtos</a>
             </div>
-        </div>
-    </section>
-  
-      <section class="feature-list section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="heading">
-                        <h2>Why choose our product?</h2>
+            <div class="hero-visual">
+                <div class="product-showcase">
+                    <div class="product-card-mini">
+                        <h3>4Serum</h3>
+                        <p>Renovação</p>
                     </div>
-                </div>
-
-            </div>
-            <div class="row mb-40">
-                <div class="col-md-6 text-center mb-5 mb-lg-0">
-                    <img class="img-fluid" src="images/sample-bottles.png" alt="">
-                </div>
-                <div class="col-md-6 align-self-center text-center text-md-left">
-                    <div class="content">
-                        <h4 class="subheading">Lorem ipsum dolor sit amet.</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id est ea ratione debitis temporibus aliquam cumque nesciunt nihil odit aperiam voluptas, tempora quod dignissimos tenetur vero inventore modi perspiciatis porro?</p>
-                        <a href="" class="btn btn-main btn-main-sm">Check Features</a>
+                    <div class="product-card-mini">
+                        <h3>4Fit</h3>
+                        <p>Performance</p>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 order-md-1 order-2 align-self-center text-center text-md-left">
-                    <div class="content">
-                        <h4 class="subheading">Lorem ipsum dolor sit amet.</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae at molestiae sint aut quibusdam nesciunt voluptas molestias error illum! Rem at aspernatur possimus nisi totam ex voluptatibus, placeat voluptas quae.</p>
-                        <a href="#" class="btn btn-main btn-main-sm">Check Features</a>
-                    </div>
-                </div>
-                <div class="col-md-6 order-md-2 order-1 text-center mb-5 mb-lg-0">
-                    <img class="img-fluid" src="images/sample-showcase.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- A showcase gallery -->
-    <section id="servicos" class="gallery">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="heading">
-                        <h2>Check out our other cosmetics..</h2>
-                    </div>
-
-                    <div class="gallery-slider">
-                        <div class="block">
-                            <div class="gallery-overlay">
-                                <a href="images/showcase-cosmetics.png" class="image-popup gallery-popup">
-                                    <i class="tf-ion-ios-search"></i>
-                                </a>
-                            </div>
-
-                            <img class="img-fluid" src="images/showcase-cosmetics2.png" alt="">
-                        </div>
-
-                        <div class="block">
-                            <div class="gallery-overlay">
-                                <a href="images/showcase-cosmetics2.png" class="image-popup gallery-popup">
-                                    <i class="tf-ion-ios-search"></i>
-                                </a>
-                            </div>
-
-                            <img class="img-fluid" src="images/showcase-cosmetics.png" alt="">
-                        </div>
-
-                        
-
+                    <div class="product-card-mini">
+                        <h3>4Blush</h3>
+                        <p>Vitalidade</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="products" id="produtos">
+        <h2 class="section-title">Nossos Produtos</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-icon">water_drop</div>
+                <h3>4Serum</h3>
+                <p>Sérum facial ultra-hidratante com ativos vegetais que promovem renovação celular e proteção
+                    antioxidante. Ideal para pele que enfrenta desafios diários de treinos intensos.</p>
+                <ul class="product-features">
+                    <li>100% vegano e cruelty-free</li>
+                    <li>Hidratação profunda 24h</li>
+                    <li>Vitaminas C e E naturais</li>
+                    <li>Rápida absorção</li>
+                </ul>
+            </div>
 
-    <!-- A email subscription form -->
-    <section class="call-to-action section bg-opacity bg-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-8 text-center mx-auto">
-                    <h2 class="subheading text-white">Get Product Updates</h2>
-                    <p class="text-white">Lorem ipsum dolor amet, consectetur adipisicing elit, sed do eiusmod</p>
-                    <div class="input-group">
-                        <form action="#" class="w-100">
-                            <input type="email" id="email" class="form-control" name="email" placeholder="Your Email Address Here" required>
-                            <button class="btn btn-main btn-submit" type="submit">Subscribe</button>
-                        </form>
-                    </div>
+            <div class="product-card">
+                <div class="product-icon">fitness_center</div>
+                <h3>4Fit</h3>
+                <p>Loção corporal revitalizante com extratos botânicos que ajudam na recuperação muscular e proporcionam
+                    sensação refrescante pós-treino.</p>
+                <ul class="product-features">
+                    <li>Ação refrescante e calmante</li>
+                    <li>Auxilia na recuperação muscular</li>
+                    <li>Fórmula não oleosa</li>
+                    <li>Ingredientes naturais</li>
+                </ul>
+            </div>
+
+            <div class="product-card">
+                <div class="product-icon">auto_awesome</div>
+                <h3>4Blush</h3>
+                <p>Blush em pó mineral com pigmentos naturais que proporcionam um glow saudável e duradouro. Perfeito
+                    para manter a vitalidade no rosto mesmo após os treinos.</p>
+                <ul class="product-features">
+                    <li>Pigmentos minerais puros</li>
+                    <li>Longa duração</li>
+                    <li>Não obstrui os poros</li>
+                    <li>À prova de suor</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="sobre">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Sobre a 4Bee</h2>
+                <p>Nascemos da união entre o amor pela natureza e a paixão por um estilo de vida ativo. A 4Bee
+                    desenvolve cosméticos vegetarianos de alta performance pensados para pessoas que se importam tanto
+                    com sua saúde quanto com o planeta.</p>
+                <p>Cada produto é formulado com ingredientes naturais cuidadosamente selecionados, livres de crueldade
+                    animal e testados para resistir aos desafios do dia a dia fitness.</p>
+            </div>
+            <div class="values">
+                <div class="value-card">
+                    <h4>100% Vegano</h4>
+                    <p>Todos os nossos produtos são livres de ingredientes de origem animal</p>
+                </div>
+                <div class="value-card">
+                    <h4>Cruelty-Free</h4>
+                    <p>Nunca testamos em animais em nenhuma fase de desenvolvimento</p>
+                </div>
+                <div class="value-card">
+                    <h4>Performance</h4>
+                    <p>Desenvolvidos para suportar rotinas fitness intensas</p>
+                </div>
+                <div class="value-card">
+                    <h4>Sustentável</h4>
+                    <p>Embalagens eco-friendly e processos conscientes</p>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!-- Your team info here -->
-    <section id="contact" class="testimonials section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12">
-                    <div class="heading">
-                        <h2>Watch Review</h2>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0 text-center">
-                    <div class="testimonial-block">
-                        <i class="tf-ion-quote"></i>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, deleniti. Reprehenderit vitae rem aspernatur modi, rerum provident quidem natus, animi quis similique magnam maxime omnis incidunt obcaecati est, porro eum.
-                        </p>
-                        <div class="author-details">
-                            <img src="images/avatar-recommend.png" alt="">
-                            <h4>Member name</h4>
-                            <span>Designation</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0 text-center">
-                    <div class="testimonial-block">
-                        <i class="tf-ion-quote"></i>
-                        <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, deleniti. Reprehenderit vitae rem aspernatur modi, rerum provident quidem natus, animi quis similique magnam maxime omnis incidunt obcaecati est, porro eum.
-                        </p>
-                        <div class="author-details">
-                            <img src="images/avatar-recommend.png" alt="">
-                            <h4>Member Name</h4>
-                            <span>Designation</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0 text-center">
-                    <div class="testimonial-block">
-                        <i class="tf-ion-quote"></i>
-                        <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, deleniti. Reprehenderit vitae rem aspernatur modi, rerum provident quidem natus, animi quis similique magnam maxime omnis incidunt obcaecati est, porro eum.
-                        </p>
-                        <div class="author-details">
-                            <img src="images/avatar-recommend.png" alt="">
-                            <h4>Member Name</h4>
-                            <span>Designation</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-100">
-                <div class="col-md-12 text-center">
-                    <a href="" class="btn btn-main">Grab You Product Now</a>
-                </div>
-            </div>
-        </div>
+    <section class="cta-section" id="contato">
+        <h2>Junte-se à Revolução Fitness & Natural</h2>
+        <p>Seja um dos primeiros a experimentar a linha 4Bee</p>
+        <a href="#" class="cta-button">Cadastre-se para Lançamento</a>
     </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    <footer>
+        <p>&copy; 2026 4Bee Cosméticos. Todos os direitos reservados. | Beleza Natural para o Corpo Fitness</p>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
 </body>
+
+</html>

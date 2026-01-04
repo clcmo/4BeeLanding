@@ -1,0 +1,17 @@
+/* ==================== DARK MODE ==================== */
+.dark-mode {
+    --primary-blue: #3399FF;
+    --primary-blue-light: #66B3FF;
+    --primary-blue-dark: #0066CC;
+    --accent-blue: #00BFFF;
+    --white: #1A1A1A;
+    --off-white: #242424;
+    --black: #FFFFFF;
+    --gray-light: #2A2A2A;
+    --gray-medium: #B0B0B0;
+    --gray-dark: #E0E0E0;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+    --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.6);
+}

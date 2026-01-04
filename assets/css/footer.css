@@ -1,0 +1,12 @@
+/* ==================== FOOTER ==================== */
+footer {
+    padding: var(--spacing-xl) 5%;
+    background: var(--white);
+    text-align: center;
+    border-top: 2px solid var(--primary-blue);
+}
+
+footer p {
+    color: var(--gray-medium);
+    font-weight: 500;
+}

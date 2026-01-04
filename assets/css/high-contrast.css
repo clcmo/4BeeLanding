@@ -1,0 +1,17 @@
+/* ==================== HIGH CONTRAST MODE ==================== */
+.high-contrast {
+    --primary-blue: #0050B3;
+    --primary-blue-light: #0077E6;
+    --primary-blue-dark: #003580;
+    --accent-blue: #0088CC;
+    --white: #FFFFFF;
+    --off-white: #FFFFFF;
+    --black: #000000;
+    --gray-light: #CCCCCC;
+    --gray-medium: #808080;
+    --gray-dark: #333333;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.5);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.6);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.7);
+    --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.8);
+}

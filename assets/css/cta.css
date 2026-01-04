@@ -1,0 +1,30 @@
+/* ==================== CTA SECTION ==================== */
+.cta-section {
+    padding: var(--spacing-3xl) 5%;
+    background: var(--primary-blue);
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 3rem;
+    color: var(--white);
+    margin-bottom: var(--spacing-lg);
+    font-weight: 900;
+}
+
+.cta-section p {
+    font-size: 1.3rem;
+    color: var(--white);
+    margin-bottom: var(--spacing-xl);
+    opacity: 0.9;
+}
+
+.cta-section .cta-button {
+    background: var(--white);
+    color: var(--primary-blue);
+}
+
+.cta-section .cta-button:hover {
+    background: var(--off-white);
+    color: var(--primary-blue-dark);
+}
